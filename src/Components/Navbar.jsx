@@ -1,5 +1,5 @@
 import React from 'react'
-import './header.css'
+import './Header.css'
 import Button from './Button'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
