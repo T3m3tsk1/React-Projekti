@@ -18,7 +18,7 @@ const Navbar = () => {
     setClick(false)
   }
 
-  useEffect(() => {
+  /* useEffect(() => {
     const handleScroll = () => {
       FalseClick(); // Sulkee valikon, kun käyttäjä scrollaa
     };
@@ -26,7 +26,7 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll); // Poista kuuntelija unmountissa
   }, []);
-
+ */
   return (
     <div className='navbar'>
       <div>
