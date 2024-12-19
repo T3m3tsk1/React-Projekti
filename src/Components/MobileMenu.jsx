@@ -12,12 +12,12 @@ const MobileMenu = (props) => {
           </Link>
         </li>
         <li className='menu-link'>
-          <Link to='/Contact' onClick={props.handleClick}>
+          <Link to='/contact' onClick={props.handleClick}>
             Contact
           </Link>
         </li>
         <li className='menu-link'>
-          <Link to='/' onClick={props.handleClick}>
+          <Link to='/products' onClick={props.handleClick}>
             Products
           </Link>
         </li>

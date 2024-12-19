@@ -3,7 +3,9 @@
   top: 75px;
   right: 0;
   width: 60vw;
-  height: calc(100vh - 75px);
+  height: calc(100vh - 120px);
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
   background-color: #010f13ee;
   display: none;
   padding-top: 30px;
