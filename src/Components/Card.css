@@ -42,3 +42,9 @@
     max-height: fit-content;
   }
 }
+
+@media (max-height: 420px) {
+  .card {
+    max-height: none;
+  }
+}
