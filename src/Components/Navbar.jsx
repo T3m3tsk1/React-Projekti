@@ -4,6 +4,7 @@ import Button from './Button'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import MobileMenu from './MobileMenu'
+import LogoImage from '../images/logo.jpg'
 
 
 const Navbar = () => {
@@ -22,7 +23,7 @@ const Navbar = () => {
       <div>
         <Link to='/' className='logo' onClick={FalseClick}>
           <p className='logo-text'>MechanoMind</p>
-          <img src="src\images\logo.jpg" className='logo-img' />
+          <img src={LogoImage} className='logo-img' />
         </Link>
       </div>
       <ul className='nav-links'>
