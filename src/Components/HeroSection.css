@@ -20,6 +20,11 @@
   text-align: center;
 }
 
+.hero-container > h1 > strong {
+  font-size: 25px;
+  font-family: "montserrat", serif;
+}
+
 .overlay {
   position: absolute;
   top: 0;
