@@ -45,7 +45,7 @@ const Footer = () => {
           </a>
         </div>
       </footer>
-      <div className='copyright-div'>© 2024 Mechanomind Inc. All rights reserved.</div>
+      <div className='copyright-div'>© 2024 Mechanomind. All rights reserved. <br /><br /> This project is created for learning purposes. All content is fictional and made up for demonstration purposes.</div>
     </>
   )
 }
