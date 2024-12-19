@@ -2,7 +2,7 @@ import React from 'react'
 import './Header.css'
 import Button from './Button'
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import MobileMenu from './MobileMenu'
 import LogoImage from '../images/logo.jpg'
 
@@ -17,6 +17,15 @@ const Navbar = () => {
   const FalseClick = () => {
     setClick(false)
   }
+
+  useEffect(() => {
+    const handleScroll = () => {
+      FalseClick(); // Sulkee valikon, kun käyttäjä scrollaa
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll); // Poista kuuntelija unmountissa
+  }, []);
 
   return (
     <div className='navbar'>
