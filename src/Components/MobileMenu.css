@@ -1,0 +1,90 @@
+.mobile-menu {
+  position: fixed;
+  top: 75px;
+  right: 0;
+  width: 60vw;
+  height: calc(100vh - 75px);
+  background-color: #010f13ee;
+  display: none;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.click {
+  display: block;
+}
+
+.menu-list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-link {
+  list-style: none;
+}
+
+.menu-link > a {
+  text-decoration: none;
+  color: white;
+  font-family: "Zen Dots", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  transition: all 0.15s;
+}
+
+.menu-link > a:hover {
+  color: rgb(129, 126, 126);
+}
+
+.menu-link > a:active {
+  opacity: 0.4;
+}
+
+.close-button {
+  border: 2px solid #3fa4a8;
+  background-color: #3fa4a8;
+  color: white;
+  font-family: "Zen Dots", sans-serif;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 50px;
+  transition: all 0.15;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  border-color: white;
+  opacity: 0.7;
+}
+
+.close-button:active {
+  opacity: 0.5;
+}
+
+@media (max-width: 510px) {
+  .menu-link > a {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 410px) {
+  .menu-link > a {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 800px) {
+  .mobile-menu {
+    width: 45vw;
+  }
+}
+
+@media (min-width: 950px) {
+  .mobile-menu {
+    width: 40vw;
+  }
+}

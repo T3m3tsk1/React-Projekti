@@ -1,0 +1,44 @@
+.hero-container {
+  background-image: url('/src/images/background-image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 45px;
+  height: calc(100vh - 45px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-container > h1 {
+  font-family: "Zen Dots", sans-serif;
+  color: white;
+  font-size: 40px;
+  z-index: 1;
+  max-width: 80vw;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Musta kerros 50% läpinäkyvyydellä */
+  z-index: 1; /* Overlay kerros */
+}
+
+@media (max-width: 475px) {
+  .hero-container > h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 370px) {
+  .hero-container > h1 {
+    font-size: 25px;
+  }
+}
