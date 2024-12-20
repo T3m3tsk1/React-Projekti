@@ -33,6 +33,13 @@ const ContactForm = () => {
     } catch (err) {
       alert("Failed to send message.");
     }
+
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+    })
   };
 
   return (
