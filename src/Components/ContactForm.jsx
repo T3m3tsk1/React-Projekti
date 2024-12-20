@@ -4,7 +4,7 @@ import './ContactForm.css'
 
 const ContactForm = () => {
   return (
-    <form className='contact-form'>
+    <form className='contact-form' name='contact' method='POST' data-netlify='true' >
       <h2>Get in touch</h2>
       <input 
         className='name-input'
@@ -36,7 +36,7 @@ const ContactForm = () => {
         required
       ></textarea>
       <button className='submit-button' type='submit'>Send</button>
-      <input type="hidden" name="form-name" value="contact-form" />
+      <input type="hidden" name="form-name" value="contact" />
     </form>
   )
 }
