@@ -41,6 +41,7 @@ const ContactForm = () => {
         placeholder='Your Name'
         value={formData.name}
         onChange={handleChange}
+        autoComplete="off"
         required
       />
       <div className='email-and-phone'>
@@ -51,6 +52,7 @@ const ContactForm = () => {
           placeholder='Email'
           value={formData.email}
           onChange={handleChange}
+          autoComplete="off"
           required
         />
         <input
@@ -60,6 +62,7 @@ const ContactForm = () => {
           placeholder='Phone Number'
           value={formData.phone}
           onChange={handleChange}
+          autoComplete="off"
           required 
         />
       </div>
@@ -69,6 +72,7 @@ const ContactForm = () => {
         placeholder='Your Message'
         value={formData.message}
         onChange={handleChange}
+        autoComplete="off"
         required
       ></textarea>
       <button className='submit-button' type='submit'>Send</button>

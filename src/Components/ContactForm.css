@@ -26,7 +26,8 @@
   width: 49%;
 }
 
-input, textarea {
+.contact-form input,
+.contact-form textarea {
   border: 5px solid #195b71;
   border-radius: 10px;
   background: none;
@@ -41,7 +42,7 @@ input:focus, textarea:focus {
   caret-color: rgb(185, 185, 185);
   border-color: rgb(185, 185, 185);
   outline: none;
-  color: white;
+  color: white;;
 }
 
 ::placeholder {
